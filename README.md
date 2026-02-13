@@ -1,242 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+Hi there 👋
+Welcome to ServiceD Fire Equipment 🔥🧯
 
-  <title>Serviced Fire Equipment | Fire Extinguisher Sales & Service</title>
-  <meta name="description" content="Serviced Fire Equipment provides certified fire extinguisher services, refilling, and refurbished fire safety equipment in Florida." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://servicedfireequipment.com/" />
+We’re dedicated to helping businesses and communities stay safe with reliable fire safety equipment and services you can trust.
 
-  <!-- INLINE CSS -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+🚒 About Us
+🧯 We provide fire equipment servicing, inspection, and maintenance
+🏢 We work with commercial, industrial, and residential clients
+📋 We follow safety standards and compliance guidelines
+🔧 We focus on reliability, quality, and fast service
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1f2933;
-      line-height: 1.6;
-    }
+💡 What We Do
+🔥 Fire Extinguisher Supply & Servicing
+🚨 Fire Safety Inspections
+🛠️ Maintenance & Compliance Support
+📑 Safety Advice & Solutions
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
+🤝 Why Choose Us
+✔️ Professional & dependable service
+✔️ Safety-first approach
+✔️ Trusted fire protection solutions
 
-    /* HEADER */
-    .header {
-      background: #0b3c5d;
-      padding: 1rem 0;
-    }
+🌐 Get in Touch
+🌍 Website: https://servicedfireequipment.com/
 
-    .header-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+📞 Contact us for inspections, servicing, or safety advice
 
-    .logo {
-      color: #ffffff;
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-
-    .nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 1.2rem;
-      font-weight: 500;
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* HERO */
-    .hero {
-      background: #1d70b8;
-      color: #ffffff;
-      padding: 4rem 0;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #f97316;
-      color: #ffffff;
-      padding: 0.75rem 1.6rem;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
-    /* SECTIONS */
-    .section {
-      padding: 3rem 0;
-      text-align: center;
-    }
-
-    .section-light {
-      background: #f3f4f6;
-    }
-
-    .section h2 {
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
-
-    /* SERVICES */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: #ffffff;
-      padding: 1.5rem;
-      border-radius: 6px;
-      border: 1px solid #e5e7eb;
-    }
-
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: #0b3c5d;
-    }
-
-    /* FOOTER */
-    .footer {
-      background: #0b3c5d;
-      color: #ffffff;
-      padding: 2.5rem 0;
-      text-align: center;
-    }
-
-    .footer h3 {
-      margin-bottom: 1rem;
-    }
-
-    .footer p {
-      margin-bottom: 0.4rem;
-    }
-
-    .footer .copyright {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .header-flex {
-        flex-direction: column;
-      }
-
-      .nav {
-        margin-top: 0.8rem;
-      }
-
-      .nav a {
-        margin: 0 0.6rem;
-      }
-
-      .hero h1 {
-        font-size: 1.7rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-flex">
-      <div class="logo">Serviced Fire Equipment</div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h1>Fire Extinguisher Sales & Service You Can Trust</h1>
-      <p>Certified inspections, refilling, and refurbished fire safety equipment.</p>
-      <a href="#services" class="btn">Our Services</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Serviced Fire Equipment</h2>
-      <p>
-        We provide reliable fire extinguisher services including refilling,
-        refurbished equipment, and walk-in service for businesses and individuals.
-      </p>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section section-light">
-    <div class="container">
-      <h2>Our Services</h2>
-
-      <div class="services-grid">
-        <div class="card">
-          <h3>Refurbished Fire Extinguishers</h3>
-          <p>Affordable and safety-checked refurbished extinguishers.</p>
-        </div>
-
-        <div class="card">
-          <h3>Fire Extinguisher Refilling</h3>
-          <p>Certified refilling for all extinguisher types.</p>
-        </div>
-
-        <div class="card">
-          <h3>Walk-In Service</h3>
-          <p>Fast service with no appointment required.</p>
-        </div>
-
-        <div class="card">
-          <h3>CO₂ Services</h3>
-          <p>Professional CO₂ fire extinguisher maintenance.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer id="contact" class="footer">
-    <div class="container">
-      <h3>Contact Us</h3>
-      <p><strong>Phone:</strong> (727) 620-3473</p>
-      <p><strong>Email:</strong> info@servicedfireequipment.com</p>
-      <p><strong>Address:</strong> 3200 62nd Ave N, St. Petersburg, FL 33702</p>
-      <p class="copyright">
-        © 2026 Serviced Fire Equipment. All Rights Reserved.
-      </p>
-    </div>
-  </footer>
-
-</body>
-</html>
+Thanks for visiting — your safety is our priority ⭐🔥
