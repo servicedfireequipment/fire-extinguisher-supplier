@@ -1,222 +1,169 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Serviced Fire Equipment | Fire Protection Services</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Serviced Fire Equipment provides professional fire extinguisher services, inspections, and fire suppression systems.">
-  <meta name="robots" content="index, follow">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionVibe | Modern Fashion Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #ffffff; color: #222; }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #1f2933;
-      background: #ffffff;
-    }
-
-    /* =========================
-       RED CTA SECTION
-    ========================= */
-    .cta-section {
-      background: #cf2027;
-      padding: 4.5rem 0;
-    }
-
-    .cta-container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
+    /* Header */
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 2.5rem;
+      padding: 20px 60px;
+      background: #000;
+      color: #fff;
     }
-
-    .cta-left {
-      background: #f6f3ec;
-      padding: 2.8rem;
-      max-width: 560px;
-    }
-
-    .cta-left ul {
-      list-style: none;
-    }
-
-    .cta-left li {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 1.1rem;
-      padding-left: 24px;
-      position: relative;
-    }
-
-    .cta-left li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #cf2027;
-      font-weight: bold;
-    }
-
-    .cta-right {
-      flex-shrink: 0;
-    }
-
-    .cta-btn {
-      background: #ffffff;
-      color: #cf2027;
-      padding: 0.9rem 1.8rem;
+    header h1 { font-size: 26px; letter-spacing: 2px; }
+    nav a {
+      color: #fff;
+      margin-left: 25px;
       text-decoration: none;
-      font-weight: 700;
-      letter-spacing: 1px;
-      border: 2px solid #ffffff;
-      display: inline-block;
+      font-size: 15px;
     }
+    nav a:hover { color: #f5c26b; }
 
-    .cta-btn:hover {
-      background: transparent;
-      color: #ffffff;
+    /* Hero */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
     }
-
-    /* =========================
-       DARK FOOTER
-    ========================= */
-    .footer-dark {
-      background: #1f2329;
-      color: #ffffff;
-      padding: 4.5rem 0;
+    .hero h2 { font-size: 48px; margin-bottom: 15px; }
+    .hero p { font-size: 18px; margin-bottom: 30px; }
+    .hero button {
+      padding: 12px 30px;
+      border: none;
+      background: #f5c26b;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
     }
+    .hero button:hover { background: #e4b357; }
 
-    .footer-container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
+    /* Products */
+    .products {
+      padding: 80px 60px;
+    }
+    .products h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+    .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      border: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .product:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .product img { width: 100%; height: 300px; object-fit: cover; }
+    .product h4 { margin: 15px 0 8px; }
+    .product span { color: #f5c26b; font-weight: 600; }
+
+    /* Newsletter */
+    .newsletter {
+      background: #000;
+      color: #fff;
+      padding: 60px;
+      text-align: center;
+    }
+    .newsletter h3 { font-size: 28px; margin-bottom: 10px; }
+    .newsletter input {
+      padding: 12px;
+      width: 280px;
+      border: none;
+      margin-right: 10px;
+    }
+    .newsletter button {
+      padding: 12px 20px;
+      border: none;
+      background: #f5c26b;
+      font-weight: 600;
+      cursor: pointer;
     }
 
-    .footer-brand h2 {
-      font-size: 1.8rem;
-      font-weight: 800;
-      line-height: 1.2;
+    /* Footer */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
     }
 
-    .footer-brand span {
-      color: #cf2027;
-    }
-
-    .footer-brand p {
-      color: #c7c9cc;
-      margin-top: 1rem;
-      max-width: 340px;
-      font-size: 0.95rem;
-    }
-
-    .footer-col h3 {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-
-    .footer-col ul {
-      list-style: none;
-    }
-
-    .footer-col li {
-      color: #c7c9cc;
-      margin-bottom: 0.6rem;
-      font-size: 0.95rem;
-    }
-
-    .footer-col li:hover {
-      color: #ffffff;
-    }
-
-    /* =========================
-       RESPONSIVE
-    ========================= */
     @media (max-width: 768px) {
-      .cta-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .cta-right {
-        margin-top: 1.5rem;
-      }
-
-      .cta-left {
-        width: 100%;
-      }
+      header { padding: 20px; }
+      .products { padding: 60px 20px; }
     }
   </style>
-
-  <meta name="google-site-verification" content="_EJRX5oMDi2Fmf8Z3pgT0hezn-5wFupz95l43F8Bzy4" />
-  
 </head>
-
 <body>
 
-  <!-- RED CTA SECTION -->
-  <section class="cta-section">
-    <div class="cta-container">
+  <header>
+    <h1>FashionVibe</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Contact</a>
+    </nav>
+    <meta name="google-site-verification" content="_EJRX5oMDi2Fmf8Z3pgT0hezn-5wFupz95l43F8Bzy4" />
+  </header>
 
-      <div class="cta-left">
-        <ul>
-          <li>Marine Fire Systems</li>
-          <li>Restaurant Fire Suppression Systems</li>
-          <li>Paint Booth Fire Systems</li>
-          <li>Fire Extinguisher Service and Inspections</li>
-        </ul>
-      </div>
-
-      <div class="cta-right">
-        <a href="#contact" class="cta-btn">SEND ME QUOTE</a>
-      </div>
-
+  <section class="hero">
+    <div>
+      <h2>New Season, New Style</h2>
+      <p>Discover the latest trends in fashion</p>
+      <button>Shop Now</button>
     </div>
   </section>
 
-  <!-- DARK FOOTER -->
-  <footer class="footer-dark" id="contact">
-    <div class="footer-container">
-
-      <div class="footer-brand">
-        <h2><span>SERVICED</span><br>FIRE EQUIPMENT</h2>
-        <p>
-          Providing refurbished and used fire safety equipment
-          and professional fire protection services you can trust.
-        </p>
+  <section class="products">
+    <h3>Featured Collection</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1520975922321-71a8b1eaf2a5?auto=format&fit=crop&w=800&q=80" />
+        <h4>Classic Jacket</h4>
+        <span>$89</span>
       </div>
-
-      <div class="footer-col">
-        <h3>Services</h3>
-        <ul>
-          <li>Refurbished Fire Extinguishers</li>
-          <li>Beverage CO₂ Refilling / Recharging</li>
-          <li>Fire Extinguisher Inspections</li>
-          <li>Fire Suppression Systems</li>
-        </ul>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1520974735194-6c5d59d7bcd5?auto=format&fit=crop&w=800&q=80" />
+        <h4>Summer Dress</h4>
+        <span>$59</span>
       </div>
-
-      <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li>Fire Extinguisher Service</li>
-          <li>Areas We Serve</li>
-          <li>Request a Quote</li>
-          <li>Contact Us</li>
-        </ul>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" />
+        <h4>Street Sneakers</h4>
+        <span>$99</span>
       </div>
-
     </div>
+  </section>
+
+  <section class="newsletter">
+    <h3>Join Our Newsletter</h3>
+    <p>Get exclusive offers & style updates</p><br />
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    © 2026 FashionVibe. All rights reserved.
   </footer>
 
 </body>
