@@ -1,272 +1,224 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Serviced Fire Equipment | Fire Protection Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Serviced Fire Equipment | Fire Extinguisher Sales & Service</title>
-  <meta name="description" content="Certified fire extinguisher refilling, inspections, and refurbished fire safety equipment in Florida.">
+  <meta name="description" content="Serviced Fire Equipment provides professional fire extinguisher services, inspections, and fire suppression systems.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://servicedfireequipment.com/">
 
   <style>
-    /* CSS VARIABLES (LIGHT MODE) */
-    :root {
-      --bg: #ffffff;
-      --text: #1f2933;
-      --primary: #0b3c5d;
-      --secondary: #1d70b8;
-      --accent: #f97316;
-      --card: #f3f4f6;
-      --border: #e5e7eb;
-    }
-
-    /* DARK MODE */
-    body.dark {
-      --bg: #0f172a;
-      --text: #e5e7eb;
-      --primary: #020617;
-      --secondary: #1e3a8a;
-      --accent: #fb923c;
-      --card: #020617;
-      --border: #1e293b;
-    }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      transition: background 0.3s, color 0.3s;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
       line-height: 1.6;
+      color: #1f2933;
+      background: #ffffff;
     }
 
-    .container {
+    /* =========================
+       RED CTA SECTION
+    ========================= */
+    .cta-section {
+      background: #cf2027;
+      padding: 4.5rem 0;
+    }
+
+    .cta-container {
       width: 90%;
       max-width: 1200px;
       margin: auto;
-    }
-
-    /* HEADER */
-    header {
-      background: var(--primary);
-      padding: 1rem 0;
-    }
-
-    .header-flex {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 2.5rem;
     }
 
-    .logo {
-      color: #ffffff;
-      font-size: 1.4rem;
+    .cta-left {
+      background: #f6f3ec;
+      padding: 2.8rem;
+      max-width: 560px;
+    }
+
+    .cta-left ul {
+      list-style: none;
+    }
+
+    .cta-left li {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1.1rem;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .cta-left li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #cf2027;
       font-weight: bold;
     }
 
-    nav a {
-      color: #ffffff;
+    .cta-right {
+      flex-shrink: 0;
+    }
+
+    .cta-btn {
+      background: #ffffff;
+      color: #cf2027;
+      padding: 0.9rem 1.8rem;
       text-decoration: none;
-      margin-left: 1.2rem;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* TOGGLE */
-    .toggle {
-      cursor: pointer;
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      padding: 0.4rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      margin-left: 1rem;
-    }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(135deg, var(--secondary), var(--primary));
-      color: #ffffff;
-      padding: 4.5rem 0;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2.4rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 1.8rem;
-    }
-
-    .btn {
-      background: var(--accent);
-      color: #ffffff;
-      padding: 0.8rem 1.8rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border: 2px solid #ffffff;
       display: inline-block;
     }
 
-    /* SECTIONS */
-    section {
-      padding: 3.5rem 0;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 1.9rem;
-      margin-bottom: 1rem;
-      color: var(--primary);
-    }
-
-    body.dark h2 {
+    .cta-btn:hover {
+      background: transparent;
       color: #ffffff;
     }
 
-    /* SERVICES */
-    .services-grid {
+    /* =========================
+       DARK FOOTER
+    ========================= */
+    .footer-dark {
+      background: #1f2329;
+      color: #ffffff;
+      padding: 4.5rem 0;
+    }
+
+    .footer-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2.5rem;
     }
 
-    .card {
-      background: var(--card);
-      padding: 1.8rem;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      text-align: left;
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1.2;
     }
 
-    .card h3 {
-      color: var(--secondary);
-      margin-bottom: 0.5rem;
+    .footer-brand span {
+      color: #cf2027;
     }
 
-    body.dark .card h3 {
-      color: var(--accent);
+    .footer-brand p {
+      color: #c7c9cc;
+      margin-top: 1rem;
+      max-width: 340px;
+      font-size: 0.95rem;
     }
 
-    /* FOOTER */
-    footer {
-      background: var(--primary);
+    .footer-col h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      color: #c7c9cc;
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-col li:hover {
       color: #ffffff;
-      padding: 2.5rem 0;
-      text-align: center;
     }
 
-    footer p {
-      margin-bottom: 0.4rem;
-    }
-
-    /* RESPONSIVE */
+    /* =========================
+       RESPONSIVE
+    ========================= */
     @media (max-width: 768px) {
-      .header-flex {
+      .cta-container {
         flex-direction: column;
-        gap: 0.8rem;
+        align-items: flex-start;
       }
 
-      .hero h1 {
-        font-size: 1.8rem;
+      .cta-right {
+        margin-top: 1.5rem;
+      }
+
+      .cta-left {
+        width: 100%;
       }
     }
   </style>
-<meta name="google-site-verification" content="_EJRX5oMDi2Fmf8Z3pgT0hezn-5wFupz95l43F8Bzy4" />
+
+  <meta name="google-site-verification" content="_EJRX5oMDi2Fmf8Z3pgT0hezn-5wFupz95l43F8Bzy4" />
+  
 </head>
 
 <body>
 
-<header>
-  <div class="container header-flex">
-    <div class="logo">Serviced Fire Equipment</div>
-    <div>
-      <nav style="display:inline;">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="toggle" onclick="toggleMode()">🌙 / ☀️</button>
+  <!-- RED CTA SECTION -->
+  <section class="cta-section">
+    <div class="cta-container">
+
+      <div class="cta-left">
+        <ul>
+          <li>Marine Fire Systems</li>
+          <li>Restaurant Fire Suppression Systems</li>
+          <li>Paint Booth Fire Systems</li>
+          <li>Fire Extinguisher Service and Inspections</li>
+        </ul>
+      </div>
+
+      <div class="cta-right">
+        <a href="#contact" class="cta-btn">SEND ME QUOTE</a>
+      </div>
+
     </div>
-  </div>
-</header>
+  </section>
 
-<section class="hero">
-  <div class="container">
-    <h1>Fire Extinguisher Sales & Service You Can Trust</h1>
-    <p>Certified inspections, refilling, and refurbished fire safety equipment.</p>
-    <a href="#services" class="btn">Explore Services</a>
-  </div>
-</section>
+  <!-- DARK FOOTER -->
+  <footer class="footer-dark" id="contact">
+    <div class="footer-container">
 
-<section id="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>
-      Serviced Fire Equipment provides trusted fire extinguisher services,
-      refurbished units, and walk-in refilling for businesses and individuals.
-    </p>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <h2>Our Services</h2>
-
-    <div class="services-grid">
-      <div class="card">
-        <h3>Refurbished Extinguishers</h3>
-        <p>Cost-effective and safety-certified fire extinguishers.</p>
+      <div class="footer-brand">
+        <h2><span>SERVICED</span><br>FIRE EQUIPMENT</h2>
+        <p>
+          Providing refurbished and used fire safety equipment
+          and professional fire protection services you can trust.
+        </p>
       </div>
 
-      <div class="card">
-        <h3>Fire Extinguisher Refilling</h3>
-        <p>Certified refilling for all major extinguisher types.</p>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li>Refurbished Fire Extinguishers</li>
+          <li>Beverage CO₂ Refilling / Recharging</li>
+          <li>Fire Extinguisher Inspections</li>
+          <li>Fire Suppression Systems</li>
+        </ul>
       </div>
 
-      <div class="card">
-        <h3>Walk-In Service</h3>
-        <p>No appointment required — fast and reliable service.</p>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Fire Extinguisher Service</li>
+          <li>Areas We Serve</li>
+          <li>Request a Quote</li>
+          <li>Contact Us</li>
+        </ul>
       </div>
 
-      <div class="card">
-        <h3>CO₂ Services</h3>
-        <p>Professional CO₂ extinguisher maintenance and refilling.</p>
-      </div>
     </div>
-  </div>
-</section>
-
-<footer id="contact">
-  <div class="container">
-    <h3>Contact Us</h3>
-    <p><strong>Phone:</strong> (727) 620-3473</p>
-    <p><strong>Email:</strong> info@servicedfireequipment.com</p>
-    <p><strong>Address:</strong> 3200 62nd Ave N, St. Petersburg, FL</p>
-    <p>© 2026 Serviced Fire Equipment</p>
-  </div>
-</footer>
-
-<script>
-  function toggleMode() {
-    document.body.classList.toggle("dark");
-  }
-</script>
+  </footer>
 
 </body>
 </html>
+
